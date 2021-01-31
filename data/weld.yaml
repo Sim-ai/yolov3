@@ -4,8 +4,8 @@ train: /xiaopeng/weldrgb/images/train2017/  # 128 images
 val: /xiaopeng/weldrgb/images/train2017/  # 128 images
 
 # number of classes
-nc: 17
+nc: 13
 
 # class names
 names: ['气孔','夹杂','焊瘤','裂纹','咬边','未熔合','未焊透','烧穿','焊缝','成形不良','内凹','异物',
-       '伪缺陷','母材缺陷','表影','内表影','夹钨']
+       '伪缺陷']
