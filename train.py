@@ -53,6 +53,25 @@ def train(hyp, opt, device, tb_writer=None, wandb=None):
     wdir.mkdir(parents=True, exist_ok=True)  # make dir
     last = wdir / 'last.pt'
     best = wdir / 'best.pt'
+    epoch100 = wdir / 'epoch100.pt'
+    epoch200 = wdir / 'epoch200.pt'
+    epoch300 = wdir / 'epoch300.pt'
+    epoch400 = wdir / 'epoch400.pt'
+    epoch500 = wdir / 'epoch500.pt'
+    epoch600 = wdir / 'epoch600.pt'
+    epoch700 = wdir / 'epoch700.pt'
+    epoch800 = wdir / 'epoch800.pt'
+    epoch900 = wdir / 'epoch900.pt'
+    epoch1000 = wdir / 'epoch1000.pt'
+    epoch1100 = wdir / 'epoch1100.pt'
+    epoch1200 = wdir / 'epoch1200.pt'
+    epoch1300 = wdir / 'epoch1300.pt'
+    epoch1400 = wdir / 'epoch1400.pt'
+    epoch1500 = wdir / 'epoch1500.pt'
+    epoch1600 = wdir / 'epoch1600.pt'
+    epoch1700 = wdir / 'epoch1700.pt'
+    epoch1800 = wdir / 'epoch1800.pt'
+    epoch1900 = wdir / 'epoch1900.pt'
     results_file = save_dir / 'results.txt'
 
     # Save run settings
@@ -377,7 +396,43 @@ def train(hyp, opt, device, tb_writer=None, wandb=None):
                             'wandb_id': wandb_run.id if wandb else None}
 
                 # Save last, best and delete
-                torch.save(ckpt, last)
+                torch.save(ckpt, last)  
+                if epoch+1 = 100:
+                    torch.save(ckpt, epoch100)
+                if epoch+1 = 300:
+                    torch.save(ckpt, epoch300)
+                if epoch+1 = 400:
+                    torch.save(ckpt, epoch400)
+                if epoch+1 = 500:
+                    torch.save(ckpt, epoch500)
+                if epoch+1 = 600:
+                    torch.save(ckpt, epoch600)
+                if epoch+1 = 700:
+                    torch.save(ckpt, epoch700)
+                if epoch+1 = 800:
+                    torch.save(ckpt, epoch800)
+                if epoch+1 = 900:
+                    torch.save(ckpt, epoch900)
+                if epoch+1 = 1000:
+                    torch.save(ckpt, epoch1000)
+                if epoch+1 = 1100:
+                    torch.save(ckpt, epoch1100)
+                if epoch+1 = 1200:
+                    torch.save(ckpt, epoch1200)
+                if epoch+1 = 1300:
+                    torch.save(ckpt, epoch1300)
+                if epoch+1 = 1400:
+                    torch.save(ckpt, epoch1400)
+                if epoch+1 = 1500:
+                    torch.save(ckpt, epoch1500)
+                if epoch+1 = 1600:
+                    torch.save(ckpt, epoch1600)
+                if epoch+1 = 1700:
+                    torch.save(ckpt, epoch1700)
+                if epoch+1 = 1800:
+                    torch.save(ckpt, epoch1800)
+                if epoch+1 = 1900:
+                    torch.save(ckpt, epoch1900)
                 if best_fitness == fi:
                     torch.save(ckpt, best)
                 del ckpt
