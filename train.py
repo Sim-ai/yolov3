@@ -506,7 +506,7 @@ if __name__ == '__main__':
     parser.add_argument('--project', default='runs/train', help='save to project/name')
     parser.add_argument('--name', default='exp', help='save to project/name')
     parser.add_argument('--exist-ok', action='store_true', help='existing project/name ok, do not increment')
-    parser.add_argument('--dropout', type=float, default=0.7, help='dropout ratio')    # added by xp_wang
+    parser.add_argument('--dropout', type=float, default=1, help='dropout ratio')    # added by xp_wang
     opt = parser.parse_args()
 
     # Set DDP variables
