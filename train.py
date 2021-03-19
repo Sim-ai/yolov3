@@ -53,23 +53,24 @@ def train(hyp, opt, device, tb_writer=None, wandb=None):
     wdir.mkdir(parents=True, exist_ok=True)  # make dir
     last = wdir / 'last.pt'
     best = wdir / 'best.pt'
-    epoch2 = wdir / 'epoch2.pt'
-    epoch4 = wdir / 'epoch4.pt'
-    epoch6 = wdir / 'epoch6.pt'
-    epoch8 = wdir / 'epoch8.pt'
     epoch10 = wdir / 'epoch10.pt'
-    epoch12 = wdir / 'epoch12.pt'
-    epoch14 = wdir / 'epoch14.pt'
-    epoch16 = wdir / 'epoch16.pt'
-    epoch18 = wdir / 'epoch18.pt'
     epoch20 = wdir / 'epoch20.pt'
+    epoch30 = wdir / 'epoch30.pt'
+    epoch40 = wdir / 'epoch40.pt'
+    epoch50 = wdir / 'epoch50.pt'
+    epoch60 = wdir / 'epoch60.pt'
+    epoch70 = wdir / 'epoch70.pt'
+    epoch80 = wdir / 'epoch80.pt'
+    epoch90 = wdir / 'epoch90.pt'
     epoch100 = wdir / 'epoch100.pt'
     epoch200 = wdir / 'epoch200.pt'
     epoch300 = wdir / 'epoch300.pt'
     epoch400 = wdir / 'epoch400.pt'
     epoch500 = wdir / 'epoch500.pt'
     epoch600 = wdir / 'epoch600.pt'
+    epoch700 = wdir / 'epoch700.pt'
     epoch800 = wdir / 'epoch800.pt'
+    epoch900 = wdir / 'epoch900.pt'
     epoch1000 = wdir / 'epoch1000.pt'
     epoch1200 = wdir / 'epoch1200.pt'
     epoch1400 = wdir / 'epoch1400.pt'
@@ -400,26 +401,24 @@ def train(hyp, opt, device, tb_writer=None, wandb=None):
 
                 # Save last, best and delete
                 torch.save(ckpt, last)  
-                if epoch+1 == 2:
-                    torch.save(ckpt, epoch2)
-                if epoch+1 == 4:
-                    torch.save(ckpt, epoch4)
-                if epoch+1 == 6:
-                    torch.save(ckpt, epoch6) 
-                if epoch+1 == 8:
-                    torch.save(ckpt, epoch8)
                 if epoch+1 == 10:
                     torch.save(ckpt, epoch10)
-                if epoch+1 == 12:
-                    torch.save(ckpt, epoch12)
-                if epoch+1 == 14:
-                    torch.save(ckpt, epoch14)
-                if epoch+1 == 16:
-                    torch.save(ckpt, epoch16)
-                if epoch+1 == 18:
-                    torch.save(ckpt, epoch18)
                 if epoch+1 == 20:
                     torch.save(ckpt, epoch20)
+                if epoch+1 == 30:
+                    torch.save(ckpt, epoch30) 
+                if epoch+1 == 40:
+                    torch.save(ckpt, epoch40)
+                if epoch+1 == 50:
+                    torch.save(ckpt, epoch50)
+                if epoch+1 == 60:
+                    torch.save(ckpt, epoch60)
+                if epoch+1 == 70:
+                    torch.save(ckpt, epoch70)
+                if epoch+1 == 80:
+                    torch.save(ckpt, epoch80)
+                if epoch+1 == 90:
+                    torch.save(ckpt, epoch90)
                 if epoch+1 == 100:
                     torch.save(ckpt, epoch100)
                 if epoch+1 == 200:
@@ -432,8 +431,12 @@ def train(hyp, opt, device, tb_writer=None, wandb=None):
                     torch.save(ckpt, epoch500)
                 if epoch+1 == 600:
                     torch.save(ckpt, epoch600)
+                if epoch+1 == 700:
+                    torch.save(ckpt, epoch700)
                 if epoch+1 == 800:
                     torch.save(ckpt, epoch800)
+                if epoch+1 == 900:
+                    torch.save(ckpt, epoch900)
                 if epoch+1 == 1000:
                     torch.save(ckpt, epoch1000)
                 if epoch+1 == 1200:
