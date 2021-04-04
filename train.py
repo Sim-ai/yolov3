@@ -53,15 +53,15 @@ def train(hyp, opt, device, tb_writer=None, wandb=None):
     wdir.mkdir(parents=True, exist_ok=True)  # make dir
     last = wdir / 'last.pt'
     best = wdir / 'best.pt'
-    epoch10 = wdir / 'epoch10.pt'
+    #epoch10 = wdir / 'epoch10.pt'
     epoch20 = wdir / 'epoch20.pt'
-    epoch30 = wdir / 'epoch30.pt'
+    #epoch30 = wdir / 'epoch30.pt'
     epoch40 = wdir / 'epoch40.pt'
-    epoch50 = wdir / 'epoch50.pt'
+    #epoch50 = wdir / 'epoch50.pt'
     epoch60 = wdir / 'epoch60.pt'
-    epoch70 = wdir / 'epoch70.pt'
+    #epoch70 = wdir / 'epoch70.pt'
     epoch80 = wdir / 'epoch80.pt'
-    epoch90 = wdir / 'epoch90.pt'
+    #epoch90 = wdir / 'epoch90.pt'
     epoch100 = wdir / 'epoch100.pt'
     epoch200 = wdir / 'epoch200.pt'
     epoch300 = wdir / 'epoch300.pt'
@@ -402,24 +402,24 @@ def train(hyp, opt, device, tb_writer=None, wandb=None):
 
                 # Save last, best and delete
                 torch.save(ckpt, last)  
-                if epoch+1 == 10:
-                    torch.save(ckpt, epoch10)
+#                 if epoch+1 == 10:
+#                     torch.save(ckpt, epoch10)
                 if epoch+1 == 20:
                     torch.save(ckpt, epoch20)
-                if epoch+1 == 30:
-                    torch.save(ckpt, epoch30) 
+#                 if epoch+1 == 30:
+#                     torch.save(ckpt, epoch30) 
                 if epoch+1 == 40:
                     torch.save(ckpt, epoch40)
-                if epoch+1 == 50:
-                    torch.save(ckpt, epoch50)
+#                 if epoch+1 == 50:
+#                     torch.save(ckpt, epoch50)
                 if epoch+1 == 60:
                     torch.save(ckpt, epoch60)
-                if epoch+1 == 70:
-                    torch.save(ckpt, epoch70)
-                if epoch+1 == 80:
+#                 if epoch+1 == 70:
+#                     torch.save(ckpt, epoch70)
+                 if epoch+1 == 80:
                     torch.save(ckpt, epoch80)
-                if epoch+1 == 90:
-                    torch.save(ckpt, epoch90)
+#                 if epoch+1 == 90:
+#                     torch.save(ckpt, epoch90)
                 if epoch+1 == 100:
                     torch.save(ckpt, epoch100)
                 if epoch+1 == 200:
