@@ -416,7 +416,7 @@ def train(hyp, opt, device, tb_writer=None, wandb=None):
                     torch.save(ckpt, epoch60)
 #                 if epoch+1 == 70:
 #                     torch.save(ckpt, epoch70)
-                 if epoch+1 == 80:
+                if epoch+1 == 80:
                     torch.save(ckpt, epoch80)
 #                 if epoch+1 == 90:
 #                     torch.save(ckpt, epoch90)
