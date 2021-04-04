@@ -1,14 +1,13 @@
 
 # train and val data as 1) directory: path/images/, 2) file: path/images.txt, or 3) list: [path1/images/, path2/images/]
-train: /xiaopeng/weldrgb/images/train2017/  # 128 images
-val: /xiaopeng/test/images/train2017/  # 128 images
-test: /xiaopeng/test/images/train2017/
+train: /xiaopeng/yolo_train_datasde/images/train2017/  # 128 images
+val: /xiaopeng/yolo_test_dataset/images/train2017/  # 128 images
+test: /xiaopeng/yolo_test_dataset/images/train2017/
 
 # number of classes
-nc: 13
+nc: 6
 
 # class names
 #names: ['气孔','夹杂','焊瘤','裂纹','咬边','未熔合','未焊透','烧穿','焊缝','成形不良','内凹','异物',
        #'伪缺陷']
-names: ['qk', 'jz', 'hl', 'lw', 'yb', 'wrh', 'wht', 'sc', 'hf', 'cxbl', 'na', 'yw',
-       'wqx']
+names: ['porosity', 'lack of penetration', 'lack of fusion', 'overlap', 'foreign object', 'weld']
