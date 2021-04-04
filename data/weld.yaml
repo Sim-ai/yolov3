@@ -1,6 +1,6 @@
 
 # train and val data as 1) directory: path/images/, 2) file: path/images.txt, or 3) list: [path1/images/, path2/images/]
-train: /xiaopeng/yolo_train_datasde/images/train2017/  # 128 images
+train: /xiaopeng/yolo_train_dataset/images/train2017/  # 128 images
 val: /xiaopeng/yolo_test_dataset/images/train2017/  # 128 images
 test: /xiaopeng/yolo_test_dataset/images/train2017/
 
