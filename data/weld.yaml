@@ -1,13 +1,13 @@
 
 # train and val data as 1) directory: path/images/, 2) file: path/images.txt, or 3) list: [path1/images/, path2/images/]
-train: /xiaopeng/yolo_train_dataset/images/train2017/  # 128 images
-val: /xiaopeng/yolo_test_dataset/images/train2017/  # 128 images
-test: /xiaopeng/yolo_test_dataset/images/train2017/
+train: /xiaopeng/zhongguanghe-yolo-dataset/train/images/train2017/  # 128 images
+val: /xiaopeng/zhongguanghe-yolo-dataset/val/images/train2017/  # 128 images
+test: /xiaopeng/zhongguanghe-yolo-dataset/val/images/train2017/
 
 # number of classes
-nc: 6
+nc: 13
 
 # class names
-#names: ['气孔','夹杂','焊瘤','裂纹','咬边','未熔合','未焊透','烧穿','焊缝','成形不良','内凹','异物',
-       #'伪缺陷']
-names: ['porosity', 'lack of penetration', 'lack of fusion', 'overlap', 'foreign object', 'weld']
+names: ['气孔','夹杂','焊瘤','裂纹','咬边','未熔合','未焊透','烧穿','焊缝','成形不良','内凹','异物',
+       '伪缺陷']
+#names: ['porosity', 'lack of penetration', 'lack of fusion', 'overlap', 'foreign object', 'weld']
